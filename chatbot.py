@@ -69,8 +69,8 @@ if user_input:
 
 if st.session_state["generated"]:
     for i in range(len(st.session_state["generated"])-1, -1, -1):
-        st.markdown("<div class='message'>{}</div>".format(st.session_state["generated"][i]),unsafe_allow_html=True, key=str(i))
-        st.markdown("<div class='message'>{}</div>".format(st.session_state['past'][i]),unsafe_allow_html=True, key=str(i)+'_user')
+        st.write(st.session_state["generated"][i], key=str(i))
+        st.write(st.session_state["past"][i], key=str(i) + "_user")
 
 
 
