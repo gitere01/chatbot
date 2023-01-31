@@ -22,7 +22,7 @@ st.markdown(
     <style>
         .message {{
             color: blue;
-            font-size: 18px;
+            font-size: 25px;
             background-color: lightgray;
             border-radius: 10px;
             padding: 10px;
